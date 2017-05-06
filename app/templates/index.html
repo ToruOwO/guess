@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1>Hi, ZZ!</h1>
+	<div class="jumbotron">
+        <h1>你尽管猜</h1>
+        <form class="form-signin" action="{{ url_for('post')}}" method="post" name="guess">
+        <label for="inputName" class="sr-only">Name</label>
+        <br>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="所以我的ldap是啥" required autofocus>
+        <br>
+        <input type="submit" id="btnSignIn" class="btn btn-lg btn-primary btn-block" value="猜对了吗？">
+      </form>
+      </div>
+{% endblock %}
